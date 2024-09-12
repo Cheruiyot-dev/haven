@@ -874,17 +874,19 @@ textarea.form-control {
 
 .contact-section .contact-info p {
   color: white;
-  font-family: "Playfair+Display", times, serif;
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
+  color: black;
   margin-bottom: 30px;
 }
 
 .contact-section .contact-info p .d-block {
   font-size: 14px;
-  letter-spacing: .2em;
-  font-family: "Mukta Mahee", arial, sans-serif;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: .1em;
+  font-family: "Mukta Mahee",  sans-serif;
+  text-transform: none;
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: #6e6e6e;
 }
 
 .post-categories li {
