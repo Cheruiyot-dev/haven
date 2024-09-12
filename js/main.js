@@ -2,6 +2,17 @@
 
 	'use strict';
 
+
+  // Sticky header on scroll
+  $(window).scroll(function() {
+    var $header = $('.site-header');
+    if ($(this).scrollTop() > 50) {  // Adjust the scroll distance as needed
+      $header.addClass('scrolled');
+    } else {
+      $header.removeClass('scrolled');
+    }
+  });
+
   $('.site-menu-toggle').click(function(){
     var $this = $(this);
     if ( $('body').hasClass('menu-open') ) {

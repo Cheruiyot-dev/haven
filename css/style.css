@@ -73,11 +73,22 @@ textarea.form-control {
 }
 
 .site-header {
-  position: absolute;
+  /* position: absolute; */
+  position: sticky; /* Make the header sticky */
   top: 0;
   width: 100%;
-  padding: 60px 0;
-  z-index: 2;
+  padding: 20px 0;
+  z-index: 100;
+ 
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition
+
+  /* z-index: 2; */
+}
+
+.site-header.scrolled {
+  background-color: white; /* Background color after scrolling */
+  /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);  */
 }
 
 .menu-open .site-header {
@@ -86,7 +97,8 @@ textarea.form-control {
 
 .site-logo a {
   font-size: 30px;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-weight: bold;
   line-height: 1;
   font-family: "Playfair+Display", times, serif;
@@ -102,6 +114,7 @@ textarea.form-control {
   background: #fff;
   min-height: 300px;
   overflow-y: scroll;
+  z-index: 99; /* Ensure the navbar appears over content */
 }
 
 .site-navbar nav {
