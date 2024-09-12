@@ -328,6 +328,34 @@ textarea.form-control {
   transform: rotate(-135deg);
 }
 
+.btn-book {
+  display: inline-block;
+  padding: 15px 30px; /* Increase padding for a larger button */
+  font-size: 32px; /* Increase font size */
+  color: #000; /* Black text color */
+  background-color: transparent; /* Transparent background */
+  border: 3px solid #000; /* Thicker black border */
+  border-radius: 8px; /* Slightly more rounded corners */
+  text-transform: uppercase; /* Capitalize text */
+  text-decoration: none; /* Remove underline */
+  font-family: "Playfair+Display", times, serif; /* Match font */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+
+  font-size: 30px;
+  /* color: #fff; */
+  color: #000;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Playfair+Display", times, serif;
+}
+
+.btn-book:hover,
+.btn-book:focus {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text on hover */
+}
+
+
 .section {
   padding: 7em 0;
 }
