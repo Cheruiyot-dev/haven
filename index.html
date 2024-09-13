@@ -51,8 +51,8 @@
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="hotel.html">Rooms & Bookings</a></li>
                         <li><a href="reservation.html">Bar & Reservations</a></li>
-                        <li><a href="hotel.html">Meetings & Events</a></li>
-                        <li><a href="blog.html">Latest news & updates</a></li>
+                        <li><a href="meetings-events.html">Meetings & Events</a></li>
+                        <!-- <li><a href="blog.html">Latest news & updates</a></li> -->
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                       </ul>
@@ -105,12 +105,14 @@
             </p>
             <p data-aos="fade-up" data-aos-delay="100">
               <a
-                href="#"
+                href="hotel.html"
                 class="btn uppercase btn-primary mr-md-2 mr-0 mb-3 d-sm-inline d-block"
                 >Book a Room</a
               >
+
+        
               <a
-                href="#"
+                href="reservation.html"
                 class="btn uppercase btn-outline-light d-sm-inline d-block"
                 >Make Reservations</a
               >
@@ -459,16 +461,21 @@
     <footer class="section footer-section">
       <div class="container">
         <div class="row mb-4">
+          <!-- Quick Links Section -->
           <div class="col-md-3 mb-5">
+            <h5>Quick Links</h5>
             <ul class="list-unstyled link">
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Contact Us</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Rooms & bookings</a></li>
+              <li><a href="#">Rooms & Bookings</a></li>
               <li><a href="#">Reservations</a></li>
             </ul>
           </div>
+          
+          <!-- Additional Links Section -->
           <div class="col-md-3 mb-5">
+            <h5>Additional Info</h5>
             <ul class="list-unstyled link">
               <li><a href="#">Meetings & Events</a></li>
               <li><a href="#">The Lounge</a></li>
@@ -477,20 +484,18 @@
               <li><a href="#">Hotel</a></li>
             </ul>
           </div>
+          
+          <!-- Contact Information Section -->
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <p>
-              <span class="d-block">Address:</span>
-              <span> Off Elgonview Road, Eldoret City</span>
-            </p>
-            <p>
-              <span class="d-block">Phone:</span> <span> +254 701 929 704</span>
-            </p>
-            <p>
-              <span class="d-block">Email:</span>
-              <span> info@havenstay.co.ke</span>
-            </p>
+            <h5>Contact Information</h5>
+            <p><strong>Address:</strong> Off Elgonview Road, Eldoret City</p>
+            <p><strong>Phone:</strong> +254 701 929 704</p>
+            <p><strong>Email:</strong> <a href="mailto:info@havenstay.co.ke">info@havenstay.co.ke</a></p>
           </div>
+          
+          <!-- Newsletter Signup Section -->
           <div class="col-md-3 mb-5">
+            <h5>Newsletter</h5>
             <p>Sign up for our newsletter</p>
             <form action="#" class="footer-newsletter">
               <div class="form-group">
@@ -498,30 +503,31 @@
                   type="email"
                   class="form-control"
                   placeholder="Your email..."
+                  required
                 />
                 <button type="submit" class="btn">
                   <span class="fa fa-paper-plane"></span>
+                  <span class="sr-only">Submit</span>
                 </button>
               </div>
             </form>
           </div>
         </div>
+        
+        <!-- Footer Bottom Section -->
         <div class="row bordertop pt-5">
           <p class="col-md-6 text-left">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            - Haven Stay Hotel Ltd. All Right Reserved. Privacy Policy
+            &copy; <script>document.write(new Date().getFullYear());</script> Haven Stay Hotel Ltd. All Rights Reserved. <a href="#">Privacy Policy</a>
           </p>
-
+          
           <p class="col-md-6 text-right social">
-            <a href="#"><span class="fa fa-facebook"></span></a>
-            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#" aria-label="Facebook"><span class="fa fa-facebook"></span></a>
+            <a href="#" aria-label="Twitter"><span class="fa fa-twitter"></span></a>
           </p>
         </div>
       </div>
     </footer>
+    
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
