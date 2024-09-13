@@ -25,14 +25,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header  border border-danger">
       <div class="container-fluid">
-        <div class="row align-items-center">
+        <!-- target this to make navbar sticky -->
+        <div class="row align-items-center nav-sticky">
           <div class="col-4 site-logo" data-aos="fade">
             <a href="index.html">Haven Stay</a>
           </div>
           <div class="col-4 text-center">
-            <a href="book.html" class="nav-link">BOOK</a> 
+        
+             <div class="dropdown show">
+              <a class="btn btn-secondary dropdown-toggle  btn-rectangular" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Book
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                
+                <a class="dropdown-item" href="hotel.html">Book Room</a>
+                <a class="dropdown-item" href="reservation.html">Table Reservations</a>
+                <a class="dropdown-item" href="meetings-events.html">Meetings & Events</a>
+              </div>
+            </div>
           </div>
           <div class="col-4">
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">

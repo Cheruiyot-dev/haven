@@ -25,20 +25,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header  border border-danger">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-4 site-logo" data-aos="fade">
             <a href="index.html">Haven Stay</a>
           </div>
-          <div class="col-8">
+          <div class="col-4 text-center">
+        
+             <div class="dropdown show">
+              <a class="btn btn-secondary dropdown-toggle  btn-rectangular" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Book
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                
+                <a class="dropdown-item" href="hotel.html">Book Room</a>
+                <a class="dropdown-item" href="reservation.html">Table Reservations</a>
+                <a class="dropdown-item" href="meetings-events.html">Meetings & Events</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
             <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
               <span></span>
               <span></span>
               <span></span>
             </div>
             <!-- END menu-toggle -->
-
+    
             <div class="site-navbar js-site-navbar">
               <nav role="navigation">
                 <div class="container">
@@ -47,9 +62,8 @@
                       <ul class="list-unstyled menu">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="hotel.html">Rooms & Bookings</a></li>
-                        <li><a href="hotel.html">Reservations & Bar</a></li>
+                        <li><a href="reservation.html">Bar & Reservations</a></li>
                         <li><a href="meetings-events.html">Meetings & Events</a></li>
-
                         <!-- <li><a href="blog.html">Latest news & updates</a></li> -->
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -60,7 +74,7 @@
                         <div class="col-md-6 mb-5">
                           <h3>Contact Information</h3>
                           <p>
-                            Off Elgonview Road<br />
+                            Off Elgonview Road <br />
                             Eldoret City
                           </p>
                           <p>info@havenstay.co.ke</p>

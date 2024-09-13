@@ -2,16 +2,27 @@
 
 	'use strict';
 
+// Sticky header on scroll
+$(window).scroll(function() {
+  var $header = $('.site-header');
+  var $logo = $('.site-logo a');
+  var $bookLink = $('.dropdown-toggle');
+  var $menuToggle = $('.site-menu-toggle span');
+  var scrollTop = $(this).scrollTop();
+  var headerHeight = $header.outerHeight();
 
-  // Sticky header on scroll
-  $(window).scroll(function() {
-    var $header = $('.site-header');
-    if ($(this).scrollTop() > 50) {  // Adjust the scroll distance as needed
-      $header.addClass('scrolled');
-    } else {
-      $header.removeClass('scrolled');
-    }
-  });
+  if (scrollTop > headerHeight) {
+    $header.addClass('scrolled');
+    $logo.addClass('scrolled-text');
+    $bookLink.addClass('scrolled-text');
+    $menuToggle.addClass('scrolled-toggle');
+  } else {
+    $header.removeClass('scrolled');
+    $logo.removeClass('scrolled-text');
+    $bookLink.removeClass('scrolled-text');
+    $menuToggle.removeClass('scrolled-toggle');
+  }
+});
 
   $('.site-menu-toggle').click(function(){
     var $this = $(this);
