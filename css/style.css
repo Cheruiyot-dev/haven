@@ -4,7 +4,7 @@ body {
   font-weight: 200;
   font-size: 16px;
   line-height: 1.8;
-  color: #6c757d;
+  /* color: #6c757d; */
 }
 
 ::-moz-selection {
@@ -72,18 +72,18 @@ textarea.form-control {
   height: inherit;
 }
 
+
 .site-header {
-  /* position: absolute; */
-  position: sticky; 
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 20px 0;
-  z-index: 100;
-  background-color: transparent; /* Initially transparent */
-  transition: background-color 0.3s ease; /* Smooth transition
-
-  /* z-index: 2; */
+  z-index: 200; /* Ensure header is above hero section */
+  background-color: transparent; /* Adjust as needed */
+  transition: background-color 0.3s ease;
 }
+
+
 
 .site-header.scrolled {
   background-color: white; /* Background color after scrolling */
@@ -182,11 +182,20 @@ textarea.form-control {
   min-height: 700px;
 }
 
-.site-hero {
+/* .site-hero {
   background-size: cover;
   height: 100vh;
   min-height: 700px;
   width: 100%;
+} */
+
+.site-hero {
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  min-height: 700px;
+  width: 100%;
+  position: relative; /* Ensure relative positioning to contain the absolute positioned header */
+  z-index: 100; /* Ensure it’s behind the header */
 }
 
 .site-hero .scroll-down {
